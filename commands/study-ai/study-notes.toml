@@ -1,0 +1,7 @@
+description = "Complete pipeline: extract PDF, clean, and generate study notes."
+
+prompt = """
+Process this PDF lecture file through the complete pipeline (extract → clean → analyze):
+
+{{args}}
+"""

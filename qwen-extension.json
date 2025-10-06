@@ -1,0 +1,9 @@
+{
+  "name": "study-ai",
+  "version": "1.0.0",
+  "contextFileName": "AGENTS.md",
+  "excludeTools": ["run_shell_command"],
+  "mcpServers": {
+    "pdf-reader": { "command": "uvx", "args": ["mcp-pdf-reader", "stdio"] }
+  }
+}

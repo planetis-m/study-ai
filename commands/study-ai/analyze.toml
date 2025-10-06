@@ -1,0 +1,7 @@
+description = "Generate exam study notes from slide content with key topics and explanations."
+
+prompt = """
+Identify key topics and generate detailed study notes from this content:
+
+{{args}}
+"""
