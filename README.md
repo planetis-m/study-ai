@@ -7,27 +7,55 @@ The extension helps students prepare for exams by processing lecture PDF slides 
 
 ## Setup Instructions
 
-Install required packages:
+### 1. Install Required Packages
+
 ```bash
-sudo apt-get install npm nodejs uv
+sudo apt-get update
+sudo apt-get install -y npm nodejs uv git
 ```
 
-Install Qwen Code:
+### 2. Install an AI CLI (Choose One)
+
+#### Option A: Qwen Code
+
 ```bash
 npm install -g @qwen-code/qwen-code@latest
 qwen --version
 ```
 
-Set Up Workspace:
+#### Option B: Gemini CLI
+
+```bash
+npm install -g @google/gemini-cli@latest
+gemini --version
+```
+
+### 3. Set Up the Study-AI Extension
+
+Your `<workspace>` is the folder where you keep your lecture slides (for example, `~/Documents/COMP417`).
+
 ```bash
 mkdir -p <workspace>/.qwen/extensions
 cd <workspace>/.qwen/extensions
-wget https://github.com/planetis-m/study-ai/archive/refs/heads/master.zip -O master.zip
-unzip master.zip
-mv study-ai-master study-ai
+git clone https://github.com/planetis-m/study-ai.git
 cd <workspace>
+```
+
+### 4. Run Your Chosen CLI
+
+#### If using Qwen Code:
+
+```bash
 qwen
 ```
+
+#### If using Gemini CLI:
+
+```bash
+gemini
+```
+
+Then run `/help` to confirm that the `study-ai` commands are available.
 
 ## Usage Examples
 
