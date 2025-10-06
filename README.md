@@ -1,9 +1,33 @@
-# Study-AI Extension Plan
+# Study-AI Qwen Code Extension
 
 ## Overview
 The extension helps students prepare for exams by processing lecture PDF slides in a two-stage pipeline:
 1. **Preprocessing**: Clean and extract content from PDFs
 2. **Analysis**: Generate structured study notes with key topics and explanations
+
+## Setup Instructions
+
+Install required packages:
+```bash
+sudo apt-get install npm nodejs uv
+```
+
+Install Qwen Code:
+```bash
+npm install -g @qwen-code/qwen-code@latest
+qwen --version
+```
+
+Set Up Workspace:
+```bash
+mkdir -p <workspace>/.qwen/extensions
+cd <workspace>/.qwen/extensions
+wget https://github.com/planetis-m/study-ai/archive/refs/heads/master.zip -O master.zip
+unzip master.zip
+mv study-ai-master study-ai
+cd <workspace>
+qwen
+```
 
 ## Usage Examples
 
@@ -38,10 +62,12 @@ lecture3.pdf"
 study-ai/
 ├── AGENTS.md            # Context file with assistant behavior
 ├── qwen-extension.json  # Extension config
-├── clean.toml           # Preprocessing command
-├── analyze.toml         # Analysis command
-├── study-notes.toml     # Complete pipeline command
-└── batch-process.toml   # Batch processing command
+└── commands/
+    └── study-ai/
+        ├── clean.toml           # Preprocessing command
+        ├── analyze.toml         # Analysis command
+        ├── study-notes.toml     # Complete pipeline command
+        └── batch-process.toml   # Batch processing command
 ```
 
 ## Key Design Decisions
