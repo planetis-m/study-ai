@@ -75,11 +75,6 @@ Then run `/help` to confirm that the `study-ai` commands are available.
 # Redirect output to a file
 /study-ai:study-notes lecture1.pdf > notes-lecture1.md
 
-# Process multiple PDFs
-/study-ai:batch-process "lecture1.pdf
-lecture2.pdf
-lecture3.pdf"
-
 # Use OCR for scanned PDFs
 /study-ai:study-notes scanned-lecture.pdf --use-ocr yes
 
@@ -98,8 +93,7 @@ study-ai/
         ├── clean.toml           # Preprocessing command
         ├── analyze.toml         # Analysis command
         ├── study-notes.toml     # Complete pipeline command
-        ├── quiz.toml            # Quiz command
-        └── batch-process.toml   # Batch processing command
+        └── quiz.toml            # Quiz command
 ```
 
 ## Key Design Decisions

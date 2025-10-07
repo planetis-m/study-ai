@@ -1,9 +1,0 @@
-description = "Process multiple PDF files and generate study notes for each."
-
-prompt = """
-Process each of these PDF files and generate study notes (one PDF per line):
-
-{{args}}
-
-Output each file's notes with a header showing the filename.
-"""
