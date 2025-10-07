@@ -82,6 +82,9 @@ lecture3.pdf"
 
 # Use OCR for scanned PDFs
 /study-ai:study-notes scanned-lecture.pdf --use-ocr yes
+
+# Generate practice quizzes from content or notes
+/study-ai:quiz "Paste your slide content here..."
 ```
 
 ## Extension Directory Structure
@@ -95,6 +98,7 @@ study-ai/
         ├── clean.toml           # Preprocessing command
         ├── analyze.toml         # Analysis command
         ├── study-notes.toml     # Complete pipeline command
+        ├── quiz.toml            # Quiz command
         └── batch-process.toml   # Batch processing command
 ```
 

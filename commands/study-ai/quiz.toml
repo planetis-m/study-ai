@@ -1,0 +1,7 @@
+description = "Generate quiz questions from study materials to test understanding."
+
+prompt = """
+Generate quiz questions based on this content:
+
+{{args}}
+"""
