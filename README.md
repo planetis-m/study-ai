@@ -32,13 +32,22 @@ gemini --version
 
 ### 3. Set Up the Study-AI Extension
 
-Your `<workspace>` is the folder where you keep your lecture slides (for example, `~/Documents/COMP417`).
+Your `<workspace>` is the folder where you store your lecture slides (for example, `~/Documents/COMP417`).
+
+**For Qwen:**
 
 ```bash
 mkdir -p <workspace>/.qwen/extensions
 cd <workspace>/.qwen/extensions
 git clone https://github.com/planetis-m/study-ai.git
 cd <workspace>
+```
+
+**For Gemini:**
+Since workspace extensions are deprecated, use the following command instead:
+
+```bash
+gemini extensions install https://github.com/planetis-m/study-ai.git
 ```
 
 ### 4. Run Your Chosen CLI
