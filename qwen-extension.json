@@ -1,6 +1,6 @@
 {
   "name": "study-ai",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "contextFileName": "AGENTS.md",
   "excludeTools": ["run_shell_command", "web_fetch"],
   "mcpServers": {
