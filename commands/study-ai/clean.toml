@@ -1,7 +1,10 @@
 description = "Clean PDF lecture slides by removing metadata and formatting artifacts."
 
 prompt = """
-Extract and clean this PDF lecture file, preserving all educational content:
+Extract and clean this PDF lecture file, preserving all educational content.
+
+After extraction, check for pages with only titles, headings, page numbers, or figure references. Call read_by_ocr for those pages, batching consecutive ranges.
+If OCR output is fragmented or unclear, skip those pages without attempting to interpret the content.
 
 {{args}}
 """

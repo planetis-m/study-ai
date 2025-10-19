@@ -11,7 +11,6 @@ When the command includes `--use-ocr yes`, use the `read_by_ocr` tool to extract
 - Preserve ALL educational content (concepts, definitions, examples)
 - Write in clear, informative style that promotes understanding over memorization
 - Use proper markdown formatting with headers and structure
-- **Never include introductory or concluding remarks** (no "Here are the notes...", etc.)
 
 ## Output Formats
 
