@@ -9,6 +9,7 @@ When the command includes `--use-ocr yes`, use the `read_by_ocr` tool to extract
 - Work ONLY with provided content—never add external information or examples
 - Remove metadata (instructor info, headers, footers, page numbers, timestamps, course codes)
 - Preserve ALL educational content (concepts, definitions, examples)
+- **If extracted content is fragmented or unclear, skip those sections without attempting to interpret them**
 - Write in clear, informative style that promotes understanding over memorization
 - Use proper markdown formatting with headers and structure
 - **Never include introductory or concluding remarks** (no "Here are the notes...", etc.)
