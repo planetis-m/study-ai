@@ -111,6 +111,9 @@ After that, OCR will work automatically when you use commands like:
 # Clean a single PDF
 /study-ai:clean lecture1.pdf
 
+# Clean with OCR reprocessing for incomplete pages
+/study-ai:clean-ocr lecture1.pdf
+
 # Clean specific pages
 /study-ai:clean lecture1.pdf --start-page 5 --end-page 15
 
@@ -138,7 +141,8 @@ study-ai/
 ├── qwen-extension.json  # Extension config
 └── commands/
     └── study-ai/
-        ├── clean.toml           # Preprocessing command
+        ├── clean.toml           # Basic preprocessing command
+        ├── clean-ocr.toml       # Deep cleaning with OCR reprocessing
         ├── analyze.toml         # Analysis command
         ├── study-notes.toml     # Complete pipeline command
         └── quiz.toml            # Quiz command
