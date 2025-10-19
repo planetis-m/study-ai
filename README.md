@@ -66,6 +66,26 @@ gemini
 
 Then run `/help` to confirm that the `study-ai` commands are available.
 
+### Enable OCR (for Scanned PDFs)
+
+OCR support relies on **Tesseract**. Install it with:
+
+```bash
+sudo apt install -y tesseract-ocr tesseract-ocr-eng
+```
+
+Then set the environment variable so the extension can find the language data:
+
+```bash
+export TESSDATA_PREFIX=/usr/share/tesseract/tessdata
+```
+
+After that, OCR will work automatically when you use commands like:
+
+```bash
+/study-ai:study-notes scanned-lecture.pdf --use-ocr yes
+```
+
 ## Usage Examples
 
 ```bash
