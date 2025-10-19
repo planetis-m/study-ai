@@ -23,6 +23,25 @@ npm install -g @qwen-code/qwen-code@latest
 qwen --version
 ```
 
+**Optional: Use OpenRouter**
+
+Edit `~/.qwen/.env`:
+```bash
+OPENAI_API_KEY=your_openrouter_api_key
+OPENAI_BASE_URL=https://openrouter.ai/api/v1
+OPENAI_MODEL=openai/gpt-5
+```
+
+Edit `~/.qwen/settings.json`:
+```json
+{
+  "selectedAuthType": "openai"
+}
+```
+
+Get your API key: https://openrouter.ai/keys
+Browse models: https://openrouter.ai/models
+
 #### Option B: Gemini CLI
 
 ```bash
