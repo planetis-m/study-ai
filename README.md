@@ -133,3 +133,6 @@ study-ai/
 4. **Integration with pdf-reader**: Commands leverage the existing PDF tools (`read_pdf_text`, `read_by_ocr`) without reimplementing PDF parsing
 5. **Exam-Focused**: All prompts emphasize exam preparation, key topics, and deep understanding rather than general summarization
 
+## License
+This project is licensed under **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**.
+
