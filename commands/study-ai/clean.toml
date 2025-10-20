@@ -1,7 +1,8 @@
 description = "Clean PDF lecture slides by removing metadata and formatting artifacts."
 
 prompt = """
-Extract and clean this PDF lecture file, preserving all educational content:
+Extract and clean this PDF lecture file:
 
 {{args}}
 """
+

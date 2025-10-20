@@ -29,7 +29,7 @@ Edit `~/.qwen/.env`:
 ```bash
 OPENAI_API_KEY=your_openrouter_api_key
 OPENAI_BASE_URL=https://openrouter.ai/api/v1
-OPENAI_MODEL=openai/gpt-5
+OPENAI_MODEL=x-ai/grok-4-fast
 ```
 
 Edit `~/.qwen/settings.json`:

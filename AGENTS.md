@@ -16,8 +16,6 @@ When the command includes `--use-ocr yes`, use the `read_by_ocr` tool to extract
 - Preserve educational content (concepts, definitions, examples) that is clearly readable
 - If extracted content is fragmented or unclear, skip those sections without attempting to interpret them
 
-## Output Formats
-
 ### When Generating Study Notes
 Organize content by key topics with clear headers. For each topic, provide:
 - Detailed explanation of the concept

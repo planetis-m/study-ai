@@ -1,9 +1,10 @@
 description = "Clean PDF slides, applying OCR only to pages with incomplete text extraction."
 
 prompt = """
-Extract and clean this PDF lecture file, preserving all educational content.
+Extract and clean this PDF lecture file.
 
-After extraction, check for pages with only titles, captions, or page numbers. Call read_by_ocr for those pages, batching consecutive ranges.
+After extraction, identify pages with minimal educational content (only titles, captions, or page numbers). Use read_by_ocr only on those specific pages, batching consecutive ranges when possible.
 
 {{args}}
 """
+
