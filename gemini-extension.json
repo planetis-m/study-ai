@@ -5,6 +5,10 @@
   "contextFileName": "AGENTS.md",
   "excludeTools": ["run_shell_command", "web_fetch"],
   "mcpServers": {
-    "pdf-reader": { "command": "uvx", "args": ["mcp-pdf-reader", "stdio"] }
+    "pdf-reader": {
+      "command": "uvx",
+      "args": ["--from", "git+https://github.com/planetis-m/mcp-pdf-reader.git", "mcp-pdf-reader", "stdio"]
+    }
   }
 }
+
