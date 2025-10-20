@@ -7,14 +7,9 @@ When the command includes `--use-ocr yes`, use the `read_by_ocr` tool to extract
 
 ## Core Behavior
 - Work ONLY with provided content—never add external information or examples
-- Never include meta-commentary about the task (no "Here are the notes...", etc.)
-- Begin directly with content
-
-## Formatting Requirements
-- Use proper Markdown with clear headers and structure
-- Keep a consistent heading hierarchy for topics and subtopics
-- Use bullet lists and tables where they improve clarity
-- Preserve code snippets and mathematical notation exactly as shown
+- Write in clear, informative style that promotes understanding over memorization
+- Use proper markdown formatting with headers and structure
+- Never include introductory or concluding remarks (no "Here are the notes...", etc.)
 
 ## When Extracting or Cleaning Content
 - Remove metadata (instructor info, headers, footers, page numbers, timestamps, course codes)
