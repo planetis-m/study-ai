@@ -1,8 +1,25 @@
 description = "Complete pipeline: extract PDF, clean, and generate study notes."
 
 prompt = """
-Process this PDF lecture file through the complete pipeline (extract → clean → analyze):
+Process this PDF lecture file through the complete pipeline (extract → clean → analyze).
+
+Instructions:
+- Work ONLY with provided content—NEVER add external information or examples
+- Use proper markdown formatting with headers and structure
+- Never include introductory or concluding remarks (no "Here are the notes...", etc.)
+
+For extraction and cleaning:
+- Remove metadata (instructor info, headers, footers, page numbers, timestamps, course codes)
+- Preserve educational content (concepts, definitions, examples) that is clearly readable
+- If extracted content is fragmented or unclear, skip those sections without attempting to interpret them
+
+For generating study notes:
+- Write in clear, informative style that promotes understanding over memorization
+- Organize content by key topics with clear headers. For each topic, provide:
+  - Detailed explanation of the concept
+  - Essential facts or definitions needed for exams
+  - Relationships and connections between concepts
+  - Present information in a logical, progressive flow
 
 {{args}}
 """
-

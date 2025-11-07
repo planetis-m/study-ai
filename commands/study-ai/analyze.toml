@@ -1,8 +1,18 @@
 description = "Generate exam study notes from slide content with key topics and explanations."
 
 prompt = """
-Identify key topics and generate detailed study notes from this content:
+Identify key topics and generate detailed study notes from this content.
+
+Instructions:
+- Work ONLY with provided content—NEVER add external information or examples
+- Use proper markdown formatting with headers and structure
+- Never include introductory or concluding remarks (no "Here are the notes...", etc.)
+- Write in clear, informative style that promotes understanding over memorization
+- Organize content by key topics with clear headers. For each topic, provide:
+  - Detailed explanation of the concept
+  - Essential facts or definitions needed for exams
+  - Relationships and connections between concepts
+  - Present information in a logical, progressive flow
 
 {{args}}
 """
-

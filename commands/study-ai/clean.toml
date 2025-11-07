@@ -1,8 +1,15 @@
 description = "Clean PDF lecture slides by removing metadata and formatting artifacts."
 
 prompt = """
-Extract and clean this PDF lecture file:
+Extract and clean this PDF lecture file.
+
+Instructions:
+- Work ONLY with provided content—NEVER add external information or examples
+- Use proper markdown formatting with headers and structure
+- Never include introductory or concluding remarks (no "Here are the notes...", etc.)
+- Remove metadata (instructor info, headers, footers, page numbers, timestamps, course codes)
+- Preserve educational content (concepts, definitions, examples) that is clearly readable
+- If extracted content is fragmented or unclear, skip those sections without attempting to interpret them
 
 {{args}}
 """
-
