@@ -51,19 +51,13 @@ gemini --version
 
 ### 3. Set Up the Study-AI Extension
 
-Your `<workspace>` is the folder where you store your lecture slides (for example, `~/Documents/COMP417`).
-
 **For Qwen:**
 
 ```bash
-mkdir -p <workspace>/.qwen/extensions
-cd <workspace>/.qwen/extensions
-git clone https://github.com/planetis-m/study-ai.git
-cd <workspace>
+qwen extensions install https://github.com/planetis-m/study-ai.git
 ```
 
 **For Gemini:**
-Since workspace extensions are deprecated, use the following command instead:
 
 ```bash
 gemini extensions install https://github.com/planetis-m/study-ai.git
@@ -107,7 +101,10 @@ After that, OCR will work automatically when you use commands like:
 
 ## Usage Examples
 
+Your `<workspace>` is the folder where you store your lecture slides (for example, `~/Documents/COMP417`).
+
 ```bash
+cd <workspace>
 # Clean a single PDF
 /study-ai:clean lecture1.pdf
 
