@@ -112,8 +112,12 @@ cd <workspace>
 # Extract with OCR reprocessing for incomplete pages
 /study-ai:extract-ocr lecture1.pdf
 
-# Extract specific pages
-/study-ai:extract lecture1.pdf --start-page 5 --end-page 15
+# Extract specific page ranges
+/study-ai:extract-ocr lecture1.pdf --pages 8-20,22-27 > lecture1.md
+
+# Combine multiple sources into one study file (use >> to append)
+/study-ai:extract-ocr lecture2_part1.pdf --pages 1-20 > study_guide.md
+/study-ai:extract-ocr lecture2_part2.pdf --pages 5-10 >> study_guide.md
 
 # Analyze already-extracted text content
 /study-ai:analyze "Paste your extracted slide content here..."
@@ -129,6 +133,9 @@ cd <workspace>
 
 # Generate practice quizzes
 /study-ai:quiz "Paste your slide content here..."
+
+# Analyze extracted text (using the @ symbol to read from file)
+/study-ai:analyze @lecture1.md
 ```
 
 ## Extension Directory Structure
