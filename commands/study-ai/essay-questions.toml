@@ -6,10 +6,10 @@ Generate 3–4 essay-style practice questions based on the provided content.
 Instructions:
 - Work ONLY with the provided content—NEVER add external information or examples
 - Use proper markdown formatting with headers and clear structure
-- Never include introductory or concluding remarks (no “Here are the questions…”, etc.)
+- Never include introductory or concluding remarks (no "Here are the questions...", etc.)
 - Each question should be suitable for a 300-word essay response
 - Questions must encourage explanation, analysis, and synthesis (not recall)
-- Use academic phrasing (e.g., "Discuss," "Evaluate," "Compare and contrast," "Explain how…")
+- Use academic phrasing (e.g., "Discuss", "Evaluate", "Compare and contrast", "Explain how...")
 - Ensure at least one question is conceptual/theoretical and one is applied/integrative
 - Provide a full **Sample Answer** (approximately 300 words) for each question
 - Answers must reflect the ideas and terminology used in the provided content only
