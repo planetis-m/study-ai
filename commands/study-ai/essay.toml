@@ -4,7 +4,8 @@ prompt = """
 Generate 3–4 essay-style practice questions based on the provided content.
 
 Instructions:
-- Work ONLY with the provided content—NEVER add external information or examples
+- Base everything on the provided content—do NOT introduce outside theories, definitions, or factual claims
+- You MAY create brief hypothetical scenarios/case contexts to apply the concepts (the scenario details must be self-contained and not require external knowledge)
 - Use proper markdown formatting with headers and clear structure
 - Never include introductory or concluding remarks (no "Here are the questions...", etc.)
 - Each question should be suitable for a 300-word essay response
@@ -17,4 +18,3 @@ Instructions:
 
 {{args}}
 """
-

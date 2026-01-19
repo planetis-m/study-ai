@@ -101,32 +101,33 @@ After that, OCR will work automatically when you use commands like:
 
 ## Usage Examples
 
-Your `<workspace>` is the folder where you store your lecture slides (for example, `~/Documents/COMP417`).
+Your `<workspace>` is the folder where you store your lecture slides.
 
 ```bash
 cd <workspace>
-# Clean a single PDF
-/study-ai:clean lecture1.pdf
 
-# Clean with OCR reprocessing for incomplete pages
-/study-ai:clean-ocr lecture1.pdf
+# Extract text from a single PDF (renamed from 'clean')
+/study-ai:extract lecture1.pdf
 
-# Clean specific pages
-/study-ai:clean lecture1.pdf --start-page 5 --end-page 15
+# Extract with OCR reprocessing for incomplete pages
+/study-ai:extract-ocr lecture1.pdf
 
-# Analyze already-cleaned text content
-/study-ai:analyze "Paste your cleaned slide content here..."
+# Extract specific pages
+/study-ai:extract lecture1.pdf --start-page 5 --end-page 15
 
-# Complete pipeline (extract, clean, analyze)
+# Analyze already-extracted text content
+/study-ai:analyze "Paste your extracted slide content here..."
+
+# Generate essay questions
+/study-ai:essay "Paste content here..."
+
+# Complete pipeline (extract -> analyze)
 /study-ai:study-notes lecture1.pdf
-
-# Redirect output to a file
-/study-ai:study-notes lecture1.pdf > notes-lecture1.md
 
 # Use OCR for scanned PDFs
 /study-ai:study-notes scanned-lecture.pdf --use-ocr yes
 
-# Generate practice quizzes from content or notes
+# Generate practice quizzes
 /study-ai:quiz "Paste your slide content here..."
 ```
 
@@ -138,11 +139,12 @@ study-ai/
 ├── qwen-extension.json  # Extension config
 └── commands/
     └── study-ai/
-        ├── clean.toml           # Basic preprocessing command
-        ├── clean-ocr.toml       # Deep cleaning with OCR reprocessing
-        ├── analyze.toml         # Analysis command
-        ├── study-notes.toml     # Complete pipeline command
-        └── quiz.toml            # Quiz command
+        ├── extract.toml      # Basic preprocessing command
+        ├── extract-ocr.toml  # Deep cleaning with OCR reprocessing
+        ├── analyze.toml      # Analysis command
+        ├── study-notes.toml  # Complete pipeline command
+        ├── quiz.toml         # Quiz command
+        └── essay.toml        # Essay questions command
 ```
 
 ## Key Design Decisions
