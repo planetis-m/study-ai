@@ -134,8 +134,8 @@ cd <workspace>
 # Generate practice quizzes
 /study-ai:quiz "Paste your slide content here..."
 
-# Analyze extracted text (using the @ symbol to read from file)
-/study-ai:analyze @lecture1.md
+# Analyze extracted text
+/study-ai:analyze lecture1.md
 ```
 
 ## Extension Directory Structure

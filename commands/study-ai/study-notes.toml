@@ -6,6 +6,7 @@ Process this PDF lecture file through the complete pipeline (extract → clean �
 Instructions:
 - Work ONLY with provided content—NEVER add external information or examples
 - Use proper markdown formatting with headers and structure
+- Use LaTeX math with `$...$` for inline and `$$...$$` for display equations
 - Never include introductory or concluding remarks (no "Here are the notes...", etc.)
 
 For extraction and cleaning:

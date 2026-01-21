@@ -6,6 +6,7 @@ Identify key topics and generate detailed study notes from this content.
 Instructions:
 - Work ONLY with provided content—NEVER add external information or examples
 - Use proper markdown formatting with headers and structure
+- Use LaTeX math with `$...$` for inline and `$$...$$` for display equations
 - Never include introductory or concluding remarks (no "Here are the notes...", etc.)
 - Write in clear, informative style that promotes understanding over memorization
 - Organize content by key topics with clear headers. For each topic, provide:
