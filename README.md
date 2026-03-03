@@ -1,3 +1,5 @@
+*Deprecated:* Moved to SKILL architecture, provides caching, features like flashcard, mindmap, eli5 and lecture generation and easy setup: <https://github.com/planetis-m/study-assistant>
+
 # Study-AI Qwen Code Extension
 
 ## Overview
